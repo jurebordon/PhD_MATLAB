@@ -17,28 +17,6 @@
 %
 %
 
-%dimen1 = round(log2(max_val1/min_val1))+1;
-%dimen2 = round(log2(max_val2/min_val2))+1;
-% 
-% P1 = zeros(1, dimen1);
-% P2 = zeros(1, dimen2);
-% 
-% P1(1) = min_val1;
-% P2(1) = min_val2;
-% 
-% for i=2:dimen1
-%     P1(i) = P1(i-1)*2;
-% end;  
-% for i=2:dimen2    
-%     P2(i) = P2(i-1)*2;
-% end;
-
-%P1 = linspace(min_val1, max_val1, 10);
-%P2 = linspace(min_val2, max_val2, 10);
-
-% P1 = [ktsk_0/2 ktsk_0 ktsk_0*2];
-% P2 = [n_0-1 n_0 n_0+1];
-
 ktsk_0 = 1.6;
 n_0 = 2;
 ktsk_0_min = 0;
