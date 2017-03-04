@@ -1,0 +1,30 @@
+[System]
+Name='transc_analysis_Transk_simple0'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='mom'
+
+[Input1]
+Name='Input'
+Range=[0 400]
+NumMFs=2
+MF1='Low':'trimf',[-400 0 5]
+MF2='High':'trapmf',[0 5 2000 2000]
+
+[Output1]
+Name='ConcChange'
+Range=[0 1.2]
+NumMFs=2
+MF1='Low':'trimf',[-1.2 0 1.2]
+MF2='High':'trimf',[0 1.2 2.4]
+
+[Rules]
+1, 2 (1) : 1
+2, 1 (1) : 1

@@ -1,0 +1,30 @@
+[System]
+Name='Strelkowa_Transk_simple'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='mom'
+
+[Input1]
+Name='Input'
+Range=[0 1]
+NumMFs=2
+MF1='Low':'trimf',[-1 0 0.05]
+MF2='High':'trapmf',[0 0.05 5 5]
+
+[Output1]
+Name='ConcChange'
+Range=[0 1]
+NumMFs=2
+MF1='Low':'trimf',[-1 0 1]
+MF2='High':'trimf',[0 1 2]
+
+[Rules]
+1, 2 (1) : 1
+2, 1 (1) : 1

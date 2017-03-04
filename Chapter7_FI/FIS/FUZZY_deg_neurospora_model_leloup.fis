@@ -1,0 +1,30 @@
+[System]
+Name='FUZZY_deg_neurospora_model_leloup'
+Type='mamdani'
+Version=2.0
+NumInputs=1
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='mom'
+
+[Input1]
+Name='Species'
+Range=[0 1]
+NumMFs=2
+MF1='Low':'trapmf',[-0.5 0 0 0.30026455026455]
+MF2='High':'trapmf',[0 0.3 2 2.5]
+
+[Output1]
+Name='SpeciesDecrease'
+Range=[0 1]
+NumMFs=2
+MF1='Low':'trimf',[-1 0 0.6]
+MF2='High':'trapmf',[0 0.6 3 3.5]
+
+[Rules]
+1, 1 (1) : 1
+2, 2 (1) : 1
