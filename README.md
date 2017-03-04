@@ -1,6 +1,6 @@
 # Jure Bordon PhD MATLAB code and models
 
-This repository contains refined MATLAB code and models from my research. The code is split into two chapters (two chapters of my PhD, two different publications), Chapter 6 (pub: ACM\IEEE Transactions on Computational Biology and Bioinformatics) and Chapter 7 (pub: Fundamenta Informaticae). 
+This repository contains refined MATLAB code and models from my research. The code is split into two chapters (two chapters of my PhD, two different publications), Chapter 6 (pub: ACM\IEEE Transactions on Computational Biology and Bioinformatics) and Chapter 7 (pub: Fundamenta Informaticae). If code/files are missing or if code is not clear and you want to reproduce my results, let me know.
 
 ## Chapter 6
 
